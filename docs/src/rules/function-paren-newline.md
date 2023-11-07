@@ -3,7 +3,7 @@ title: function-paren-newline
 rule_type: layout
 ---
 
-
+This rule was **deprecated** in ESLint v8.53.0. Please use the corresponding rule in [`@stylistic/eslint-plugin-js`](https://eslint.style/packages/js).
 
 Many style guides require or disallow newlines inside of function parentheses.
 
@@ -339,11 +339,15 @@ var barbaz = function(
   bar, baz
 ) {};
 
-var barbaz = (bar,
-  baz) => {};
+var barbaz = (
+  bar,
+  baz
+) => {};
 
-foo(bar,
-  baz);
+foo(
+  bar,
+  baz
+);
 ```
 
 :::

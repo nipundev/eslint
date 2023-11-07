@@ -3,7 +3,7 @@ title: indent
 rule_type: layout
 ---
 
-
+This rule was **deprecated** in ESLint v8.53.0. Please use the corresponding rule in [`@stylistic/eslint-plugin-js`](https://eslint.style/packages/js).
 
 There are several common guidelines which require specific indentation of nested blocks and statements, like:
 
@@ -141,20 +141,23 @@ function foo(d) {
 
 Examples of **correct** code for this rule with the `"tab"` option:
 
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable MD010 -->
 ::: correct
 
 ```js
 /*eslint indent: ["error", "tab"]*/
 
 if (a) {
-/*tab*/b=c;
-/*tab*/function foo(d) {
-/*tab*//*tab*/e=f;
-/*tab*/}
+	b=c;
+	function foo(d) {
+		e=f;
+	}
 }
 ```
 
 :::
+<!-- markdownlint-restore -->
 
 ### ignoredNodes
 
@@ -192,7 +195,7 @@ Examples of **correct** code for this rule with the `4, { "ignoredNodes": ["Call
 foo();
 bar();
 
-})
+})();
 ```
 
 :::
@@ -403,7 +406,7 @@ function foo(x) {
 })();
 
 if (y) {
-   console.log('foo');
+  console.log('foo');
 }
 ```
 
